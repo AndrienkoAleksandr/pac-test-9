@@ -52,7 +52,7 @@ spec:
   workspaces:
 
 
-  - name: source
+  - name: workspace
     volumeClaimTemplate:
       spec:
         accessModes:
