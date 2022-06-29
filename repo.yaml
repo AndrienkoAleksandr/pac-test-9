@@ -1,0 +1,13 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: pac-test-9
+  namespace: pipelines-as-code
+  # namespace: openshift-pipelines
+spec:
+  url: "https://github.com/AndrienkoAleksandr/pac-test-9"
+  git_provider:
+    secret:
+      name: "github-webhook-config"
+    webhook_secret:
+      name: "github-webhook-config"
