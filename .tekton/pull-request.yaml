@@ -21,18 +21,18 @@ spec:
 
     tasks:
 
-      - name: fetch-repository
-        taskRef:
-          name: git-clone
-          kind: ClusterTask
-        workspaces:
-          - name: output
-            workspace: workspace
-        params:
-          - name: url
-            value: $(params.repo_url)
-          - name: revision
-            value: $(params.revision)
+      # - name: fetch-repository
+      #   taskRef:
+      #     name: git-clone
+      #     kind: ClusterTask
+      #   workspaces:
+      #     - name: output
+      #       workspace: workspace
+      #   params:
+      #     - name: url
+      #       value: $(params.repo_url)
+      #     - name: revision
+      #       value: $(params.revision)
 
       - name: noop-task
         runAfter:
