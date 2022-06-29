@@ -35,8 +35,8 @@ spec:
       #       value: $(params.revision)
 
       - name: noop-task
-        runAfter:
-          - fetch-repository
+        # runAfter:
+        #   - fetch-repository
         workspaces:
           - name: workspace
             workspace: workspace
